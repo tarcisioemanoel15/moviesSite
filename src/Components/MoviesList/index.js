@@ -22,8 +22,6 @@ export default function MoviesList() {
       .catch(err => console.error(err));
   }, [])
 
-  console.log(popula)
-
   return (
 
     <MovieList>
@@ -31,7 +29,7 @@ export default function MoviesList() {
         popula.map(e => {
           return (
             <Movie key={e.id}>
-              <Link to={`/details/${e.id}`}>
+              < Link to={`/details/${e.id}`}>
                 <img src={`${COMPLEMENTOURL}${e.poster_path}`} alt={e.title} />
               </Link>
               <h1 >{e.title}</h1>
@@ -40,10 +38,5 @@ export default function MoviesList() {
         })
       }
     </MovieList>
-
-
   );
-
-
-
 }

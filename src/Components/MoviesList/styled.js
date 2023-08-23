@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const MovieList = styled.ul`
 
 background-color: bisque;
+  color: black;
 margin: auto;
-margin-top: 30px;
+margin-top: 5px;
 margin-bottom: 30px;
 
 width: 98%;
