@@ -22,6 +22,7 @@ function Favoritos() {
 
   }, [])
 
+  console.log(movies);
 
   // console.log(movies)
 
@@ -37,7 +38,6 @@ function Favoritos() {
               <h1>{e.title}</h1>
             </div>
           )
-          // console.log(e)
         })
       }
     </Container>
