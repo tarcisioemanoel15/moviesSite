@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Container } from './styled';
-import { POPULARKEY, FAVORITMOVIE } from "../key";
+import { POPULARKEY, BASEURLPOPULA, COMPLEMENTOURL } from "../key";
 import { useState } from 'react';
 function Favoritos() {
 
@@ -14,34 +14,34 @@ function Favoritos() {
       }
     };
 
-    fetch(`${FAVORITMOVIE}`, options)
+    fetch(`${BASEURLPOPULA}`, options)
       .then(response => response.json())
-      // .then(response => console.log(response.results))
       .then(response => setMovies(response.results))
       .catch(err => console.error(err));
-
   }, [])
-
-  console.log(movies);
-
-  // console.log(movies)
-
-
+  console.log(movies)
 
   return (
     <Container>
+
       {
         movies.map(e => {
           return (
-            <div key={e.id}>
-              <p>{e.id}</p>
-              <h1>{e.title}</h1>
+
+            <div className='containerIMG' key={e.id}>
+
+
+              <div className="item">
+                <img src={`${COMPLEMENTOURL}${e.poster_path}`} alt={e.title} />
+                <h6>{e.title}</h6>
+              </div>
+
             </div>
+
           )
         })
       }
     </Container>
-
   )
 }
 

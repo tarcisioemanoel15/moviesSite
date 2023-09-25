@@ -22,7 +22,7 @@ export default function Menu() {
 
           <div className="logo">
             <a href="https://tarcisioemanoel15.github.io/Area-Musical/">
-              <h1>movies</h1>
+              <h1>MVS</h1>
             </a>
           </div>
 
@@ -38,7 +38,7 @@ export default function Menu() {
             <ul role="menu" className={`${active ? "menu close" : "menu open"}`} >
 
               <li><Link to='/'>Inicio</Link></li>
-              <li><Link to='/todosfilmes'> Todos os filmes </Link></li>
+              <li><Link to='/todosfilmes'>filmes </Link></li>
 
 
               <li>
@@ -61,7 +61,7 @@ export default function Menu() {
 
         <div className="logo-1">
           <h1>
-            filmes
+            MVS
           </h1>
         </div>
 

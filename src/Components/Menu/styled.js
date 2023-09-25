@@ -20,7 +20,8 @@ margin: auto;
 }
 
 .logo{
-  background-color: burlywood;
+  background-color: #00000063;
+  border-radius: 50%;
   height: 50px;
   width: 90px;
   margin-left: 5px;
@@ -28,6 +29,10 @@ margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.logo h1{
+color: red;
+
 }
 
 .btn-menu{
@@ -101,8 +106,10 @@ a{
   .logo-1{
     display:block;
     color: red;
-    background-color: azure;
     padding: 12px;
+
+    background-color: #00000063;
+  border-radius: 50%;
   }
   
 }
